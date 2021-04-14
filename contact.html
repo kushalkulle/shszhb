@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanghamitra High School</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.3.0/dist/leaflet.markercluster.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans+Condensed:wght@300;700&family=Pangolin&family=Rubik&family=Train+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
+    <script src="./assets/script.js"></script>
+</head>
+
+<body>
+    <div class="container mb-4" id="con">
+        <div class="logo">
+            <img src="./assets/images/logo.png"
+                alt="">
+        </div>
+        <ul class="nav" style="z-index: 2;">
+            <li class="nav-item">
+                <a class="nav-link " href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="alumni.html">Alumni</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="container">
+            <div class="row form-row">
+                <div class="">
+                    <div class="fcf-body">
+                        <div id="fcf-form">
+                            <!-- <h3 class="fcf-h3">Contact us</h3> -->
+                            <h1 class="fcf-h3 fav-color">We'd love to hear from you
+                            </h1>
+                            <div class="wa_logo text-center">
+                                <a href="https://wa.me/919030633008?text=Hi,%20there" target="_blank" rel="noreferrer">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+                                        width="50" alt="chat-with-us">
+                                </a>
+
+                            </div>
+
+                            <hr class="mb-3">
+                            <p class="text-center">- or -</p>
+                            <hr class="mb-3">
+
+
+                            <form id="fcf-form-id" class="fcf-form-class" method="post"
+                                action="contact-form-process.php">
+
+                                <div class="fcf-form-group">
+                                    <label for="Name" class="fcf-label">Your name</label>
+                                    <div class="fcf-input-group">
+                                        <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                                    </div>
+                                </div>
+
+                                <div class="fcf-form-group">
+                                    <label for="Email" class="fcf-label">Your email address</label>
+                                    <div class="fcf-input-group">
+                                        <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                                    </div>
+                                </div>
+
+                                <div class="fcf-form-group">
+                                    <label for="Message" class="fcf-label">Your message</label>
+                                    <div class="fcf-input-group">
+                                        <textarea id="Message" name="Message" class="fcf-form-control" rows="2"
+                                            maxlength="3000" required></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="fcf-form-group">
+                                    <button type="submit" id="fcf-button"
+                                        class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+                                </div>
+
+                                <div class="fcf-credit" id="fcf-credit">
+                                    <!-- Simple HTML email form provided by: <a href="https://www.freecontactform.com"
+                                        target="_blank">FreeContactForm.com</a> -->
+                                    <div class="container">
+                                        <!-- <div class="messages"></div> -->
+                                        <!-- <hr class="mb-4"> -->
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <!-- <div id="main_header" class="not-index"> -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3801.234839110764!2d77.62544761451898!3d17.68636298790014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bceb4ec58330329%3A0xb953dfdce52784de!2sSanghamitra%20High%20School!5e0!3m2!1sen!2sin!4v1616785583090!5m2!1sen!2sin"
+                width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <!-- </div> -->
+        </div>
+</body>
+
+</html>
